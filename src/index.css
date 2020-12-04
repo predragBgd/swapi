@@ -5,9 +5,33 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: #010101;
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+.card {
+  float: left;
+  border: #010101;
+  background-color: #010101;
+}
+.modal-header .close{
+  background-color: white
+}
+#planets{
+  margin: 0 auto;
+  width: 100%;
+
+}
+#planets button{
+  background-color: #010101;
+  border: #010101;
+  color: #006fe8;
+}
+#planets-card{
+  text-align: center;
+  width: 98%;
+  color: wheat;
 }
