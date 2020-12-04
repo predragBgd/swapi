@@ -33,7 +33,7 @@ export const Species = () => {
                         <div className="card-body">
                             <button type="button" class="btn btn-primary" data-toggle="modal" data-target={"#speciesModal" + specie.id}>{specie.name}
                             </button>
-                            <div class="modal fade" id={"speciesModal" + specie.id} tabindex="-1"                          aria-labelledby="exampleModalLabel" aria-hidden="true">
+                            <div class="modal fade" id={"speciesModal" + specie.id} tabindex="-1"                   aria-labelledby="exampleModalLabel" aria-hidden="true">
                                 <div class="modal-dialog">
                                     <div class="modal-content">
                                         <div class="modal-header">

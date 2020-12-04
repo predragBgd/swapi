@@ -29,6 +29,26 @@ export const Characters = () => {
                 return(
                     <div className="card" key={character.name} style={{width: "16rem"}}>
                         <img src={character.foto} class="card-img-top" alt="..."/>
+                        <button type="button" class="btn btn-primary" data-toggle="modal" data-target={"#characterModal" + character.id}>{character.name}
+                        </button>
+                        <div class="modal fade" id={"characterModal" + character.id} tabindex="-1"                          aria-labelledby="exampleModalLabel" aria-hidden="true">
+                        <div class="modal-dialog">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                        <h5 class="modal-title" id="exampleModalLabel">{character.name}</h5>
+                                        </div>
+                                        <div class="modal-body">
+                                            <img src={character.foto} class="card-img-top" alt="..."/>
+                                            <ul className="list-group list-group-flush">
+                                                <li className="list-group-item">Gender: {character.gender}</li>
+                                                <li className="list-group-item">Height: {character.height} cm</li>
+                                                <li className="list-group-item">Mass: {character.mass} kg</li>
+                                            </ul>
+                                            <p>{character.opis}</p>
+                                        </div>
+                                    </div>
+                                </div>  
+                        </div>
                     </div>
                 )
             })}
