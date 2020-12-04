@@ -22,7 +22,7 @@ export const Characters = () => {
             <div id="planets-card"class="card">
                 <div class="card-body">
                     <h5 class="card-title">Star Wars Characters</h5>
-                    <p class="card-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aut est, optio illum facere dolore temporibus eligendi laborum ea voluptas ducimus distinctio, minima, ullam omnis. Asperiores ex iste expedita eius, deserunt dolor. Ut omnis provident, consequatur blanditiis voluptatum quisquam modi similique cumque commodi, beatae voluptates atque.</p>
+                    <p class="card-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aut est, optio illum facere dolore temporibus eligendi laborum ea voluptas ducimus distinctio, minima, ullam omnis. Asperiores ex iste expedita eius, deserunt dolor. Ut omnis provident, consequatur blanditiis voluptatum quisquam modi similique cumque commodi, beatae voluptates atque.hhhhhhhhhhh</p>
                 </div>
             </div>
             {characters.map(character => {
