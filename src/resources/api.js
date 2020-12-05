@@ -16,5 +16,8 @@ export const getVehicles = () => {
     return axios.get("https://swapi.dev/api/vehicles/")
 }
 export const getMovies = () => {
-    return axios.get("https://swapi.dev/api/movies/")
+    return axios.get("https://swapi.dev/api/films/");
+}
+export const getMoviesById = (id) => {
+    return axios.get("https://swapi.dev/api/films/${id}")
 }
