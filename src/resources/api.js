@@ -19,5 +19,5 @@ export const getMovies = () => {
     return axios.get("https://swapi.dev/api/films/");
 }
 export const getMoviesById = (id) => {
-    return axios.get("https://swapi.dev/api/films/${id}")
+    return axios.get("https://swapi.dev/api/films/{id}")
 }
