@@ -10,6 +10,7 @@ import { Starships } from './components/starships';
 import { Vehicles } from './components/vehicles';
 import './index.css';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
+import { Home } from './components/home';
 
 const App = () => {
   return(
@@ -19,6 +20,7 @@ const App = () => {
       <div className="container">
         <Router>
           <Switch>
+            <Route exact path="/" component={Home}/>
             <Route path="/planets" component={Planets}/>
             <Route path="/characters" component={Characters}/>
             <Route path="/species" component={Species}/>
@@ -39,6 +41,7 @@ const App = () => {
 ReactDOM.render(
   <React.StrictMode>
     <App />
+
   </React.StrictMode>,
   document.getElementById('root')
 );

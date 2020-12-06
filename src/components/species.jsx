@@ -21,9 +21,9 @@ export const Species = () => {
     return(
         <div id="planets" className="row justify-content-center">
             <div id="planets-card"class="card">
-                <div class="card-body">
-                    <h5 class="card-title">Star Wars Species</h5>
-                    <p class="card-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vel nostrum architecto reprehenderit dolorum magni! Accusantium odit ipsa sunt minima, hic, voluptate blanditiis ea ipsam facilis reprehenderit earum impedit nam temporibus veniam dicta error tempora dolore. Cumque maiores soluta excepturi enim deserunt. Ipsa saepe illo omnis reiciendis optio doloribus nesciunt harum.</p>
+                <div className="card-body">
+                    <h5 className="card-title">Star Wars Species</h5>
+                    <p className="card-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vel nostrum architecto reprehenderit dolorum magni! Accusantium odit ipsa sunt minima, hic, voluptate blanditiis ea ipsam facilis reprehenderit earum impedit nam temporibus veniam dicta error tempora dolore. Cumque maiores soluta excepturi enim deserunt. Ipsa saepe illo omnis reiciendis optio doloribus nesciunt harum.</p>
                 </div>
             </div>
             {species.map((specie) => {
@@ -33,13 +33,13 @@ export const Species = () => {
                         <div className="card-body">
                             <button type="button" class="btn btn-primary" data-toggle="modal" data-target={"#speciesModal" + specie.id}>{specie.name}
                             </button>
-                            <div class="modal fade" id={"speciesModal" + specie.id} tabindex="-1"                   aria-labelledby="exampleModalLabel" aria-hidden="true">
-                                <div class="modal-dialog">
-                                    <div class="modal-content">
-                                        <div class="modal-header">
-                                        <h5 class="modal-title" id="exampleModalLabel">{specie.name}</h5>
+                            <div className="modal fade" id={"speciesModal" + specie.id} tabindex="-1"                   aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                <div className="modal-dialog">
+                                    <div className="modal-content">
+                                        <div className="modal-header">
+                                        <h5 className="modal-title" id="exampleModalLabel">{specie.name}</h5>
                                         </div>
-                                        <div class="modal-body">
+                                        <div className="modal-body">
                                             <img src={specie.foto} class="card-img-top" alt="..."/>
                                             <ul className="list-group list-group-flush">
                                                 <li className="list-group-item">Language: {specie.language}</li>
