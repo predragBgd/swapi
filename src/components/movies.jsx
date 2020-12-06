@@ -1,21 +1,10 @@
 import React, { useEffect, useState } from "react"
 import { getMovies } from "../resources/api"
-import { Link } from "react-router-dom/cjs/react-router-dom.min";
 import { moviesOpis } from "../resources/moviesOpis"
 
 
 export const Movies = () => {
     const [moviesApi, setMoviesApi] = useState([])
-
-    const extractId =(url) => {
-        let url2 = []
-        url.split("").forEach((el) => {
-            if(el > 0 || el < 9) {
-                url.push(el)
-            }
-        })
-        return url2
-    }
     useEffect(() => {
         getMovies().then((res) => {
             setMoviesApi(res.data.results)
@@ -30,21 +19,23 @@ export const Movies = () => {
         }
     })
     return(
-
-        movies.map((movie) => {
-          return(
-              <div className="card" key={movie.title}>
-                  <p>{movie.title}</p>
-                  <img className="card-img-top" src={movie.foto} alt={movie.name}/>
-                  <Link to={`/movie/${extractId(movie.url)}`}>
-                    <hr />
-                    <button type="button" className="btn btn-primary">
-                    Information:
-                    </button>
-                </Link>
-                <hr />
-              </div>
-          )  
-        })
+        <div id="planets" className="row justify-content-center">
+                <div id="planets-card"class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Star Wars Movies</h5>
+                        <p class="card-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quasi fugit reprehenderit alias mollitia accusamus dolores voluptatum temporibus quisquam illum, porro, doloremque laudantium sapiente vitae eaque officiis. Officiis deserunt necessitatibus placeat, nobis fugiat expedita explicabo quas voluptate aut, voluptas ea modi labore saepe iste consectetur architecto nisi. Ipsa quos nostrum mollitia atque suscipit exercitationem. Vitae ullam recusandae optio excepturi ad asperiores.</p>
+                    </div>
+                </div>
+            {movies.map((movie) => {
+            return(
+                    <div className="card" key={movie.name} style={{width: "16rem"}}>
+                        <img className="card-img-top" src={movie.foto} alt={movie.name}/>
+                        <button type="button" class="btn btn-primary" data-toggle="modal" data-target={"#muvieModal" + movie.id}>{movie.title}
+                        </button>
+                        <hr />
+                    </div>
+                )  
+            })}
+        </div>
     )
 }
