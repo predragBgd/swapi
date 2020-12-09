@@ -3,7 +3,7 @@ import React from "react"
 export const Header = () => {
     return(
         <nav className="nav justify-content-end">
-            <a className="nav-link" href="/">Star Wars</a>
+            <a className="nav-link" href="/star-wars">Star Wars</a>
             <a className="nav-link" href="/planets">Planets</a>
             <a className="nav-link" href="/starships">Starships</a>
             <a className="nav-link" href="/species">Species</a>

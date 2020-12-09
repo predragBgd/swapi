@@ -18,8 +18,8 @@ export const Characters = () => {
         }
     })
     return(
-        <div id="planets" className="row justify-content-center">
-            <div id="planets-card"className="card">
+        <div id="characters" className="row justify-content-center">
+            <div id="characters-card"className="card">
                 <div className="card-body">
                     <h5 className="card-title">Star Wars Characters</h5>
                     <p className="card-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aut est, optio illum facere dolore temporibus eligendi laborum ea voluptas ducimus distinctio, minima, ullam omnis. Asperiores ex iste expedita eius, deserunt dolor. Ut omnis provident, consequatur blanditiis voluptatum quisquam modi similique cumque commodi, beatae voluptates atque. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Distinctio pariatur ea illo temporibus dignissimos cupiditate unde maxime, doloremque nemo qui nihil repudiandae, explicabo excepturi beatae itaque nostrum. Laboriosam, nisi ut.</p>
@@ -44,7 +44,7 @@ export const Characters = () => {
                                                 <li className="list-group-item">Height: {character.height} cm</li>
                                                 <li className="list-group-item">Mass: {character.mass} kg</li>
                                             </ul>
-                                            <p>{character.opis}</p>
+                                            <p className="card-p">{character.opis}</p>
                                         </div>
                                     </div>
                                 </div>  

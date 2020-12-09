@@ -19,8 +19,8 @@ export const Species = () => {
     })
 
     return(
-        <div id="planets" className="row justify-content-center">
-            <div id="planets-card"class="card">
+        <div id="species" className="row justify-content-center">
+            <div id="species-card"className="card">
                 <div className="card-body">
                     <h5 className="card-title">Star Wars Species</h5>
                     <p className="card-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vel nostrum architecto reprehenderit dolorum magni! Accusantium odit ipsa sunt minima, hic, voluptate blanditiis ea ipsam facilis reprehenderit earum impedit nam temporibus veniam dicta error tempora dolore. Cumque maiores soluta excepturi enim deserunt. Ipsa saepe illo omnis reiciendis optio doloribus nesciunt harum.</p>
@@ -31,7 +31,7 @@ export const Species = () => {
                     <div className="card" key={specie.name} style={{width: "16rem"}}>
                         <img src={specie.foto} class="card-img-top" alt="..."/>
                         <div className="card-body">
-                            <button type="button" class="btn btn-primary" data-toggle="modal" data-target={"#speciesModal" + specie.id}>{specie.name}
+                            <button type="button" className="btn btn-primary" data-toggle="modal" data-target={"#speciesModal" + specie.id}>{specie.name}
                             </button>
                             <div className="modal fade" id={"speciesModal" + specie.id} tabindex="-1"                   aria-labelledby="exampleModalLabel" aria-hidden="true">
                                 <div className="modal-dialog">
@@ -47,7 +47,7 @@ export const Species = () => {
                                                 <li className="list-group-item">Average lifespan: {specie.average_lifespan}</li>
                                                 <li className="list-group-item">Average lifespan: {specie.average_lifespan}</li>
                                             </ul>
-                                            <p>{specie.opis}</p>
+                                            <p className="card-p">{specie.opis}</p>
                                         </div>
                                     </div>
                                 </div>    

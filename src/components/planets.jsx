@@ -19,7 +19,7 @@ export const Planets = () => {
     })
     return(
         <div id="planets" className="row justify-content-center">
-            <div id="planets-card"class="card">
+            <div id="planets-card"className="card">
                 <div className="card-body">
                     <h5 className="card-title">Star Wars Planets</h5>
                     <p className="card-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sed ab, optio consectetur laudantium consequatur voluptatum, iure quidem quos reiciendis veritatis rerum velit quis ipsam totam nostrum saepe iste illo esse! Alias voluptatum distinctio harum enim, praesentium temporibus vero expedita mollitia.</p>
@@ -49,7 +49,7 @@ export const Planets = () => {
                                                         <li className="list-group-item">Gravity: {planet.gravity}.</li>
                                                         <li className="list-group-item">Population: {planet.population}.</li>
                                                     </ul>
-                                                    <p>{planet.opis}</p>
+                                                    <p className="card-p">{planet.opis}</p>
                                                 </div>
                                         </div>
                                     </div>

@@ -18,8 +18,8 @@ export const Starships = () => {
         }
     })
     return(
-        <div id="planets" className="row justify-content-center">
-            <div id="planets-card"class="card">
+        <div id="starships" className="row justify-content-center">
+            <div id="starships-card"className="card">
                 <div className="card-body">
                     <h5 className="card-title">Star Wars Starships</h5>
                     <p className="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Distinctio, in iusto. Consequuntur aspernatur laborum a atque expedita perspiciatis iste commodi eius, veritatis laudantium id nostrum voluptates placeat error esse quam beatae porro quas. Ad, aliquid natus consequuntur exercitationem qui provident, dolores porro a perferendis suscipit facere consectetur ipsam atque necessitatibus quaerat error laboriosam! Pariatur, consequuntur. Repellat consequatur placeat accusantium earum.</p>
@@ -28,9 +28,9 @@ export const Starships = () => {
         {starships.map((starship) => {
             return(
                 <div className="card" key={starship.name} style={{width: "16rem"}}>
-                    <img src={starship.foto} class="card-img-top" alt="..."/>
+                    <img src={starship.foto} className="card-img-top" alt="..."/>
                     <div className="card-body">
-                        <button type="button" class="btn btn-primary" data-toggle="modal" data-target={"#starshipModal" + starship.id}>{starship.name}
+                        <button type="button" className="btn btn-primary" data-toggle="modal" data-target={"#starshipModal" + starship.id}>{starship.name}
                         </button>
                         <div className="modal fade" id={"starshipModal" + starship.id} tabindex="-1"                          aria-labelledby="exampleModalLabel" aria-hidden="true">
                             <div className="modal-dialog">
@@ -48,7 +48,7 @@ export const Starships = () => {
                                             <li className="list-group-item">Crew: {starship.crew}.</li>
                                             <li className="list-group-item">Manufacturer: {starship.manufacturer} days.</li>
                                         </ul>
-                                        <p>{starship.opis}</p>
+                                        <p className="card-p">{starship.opis}</p>
                                     </div>
                                 </div>
                             </div>

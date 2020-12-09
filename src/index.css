@@ -12,12 +12,18 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+.centar {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 90%;
+}
 .card {
   float: left;
   border: #010101;
   background-color: #010101;
 }
-.modal-header .close{
+.modal-header .close {
   background-color: white
 }
 p {
@@ -26,18 +32,38 @@ p {
 a {
   background-color: #010101;
 }
-#planets{
+.card-p {
+  color: #010101;
+}
+#planets {
   margin: 0 auto;
   width: 100%;
 
 }
-#planets button{
+.btn {
   background-color: #010101;
   border: #010101;
   color: #006fe8;
 }
-#planets-card{
+.card {
   text-align: center;
   width: 98%;
   color: wheat;
+}
+.modal-title {
+  color: #010101;
+}
+.list-group {
+  color: #010101;
+}
+#star-wars a  {
+  color: wheat;
+  text-decoration-line: underline;
+  
+}
+#movies, .card {
+  padding: 5px;
+}
+#movie p {
+  text-align: left;
 }
